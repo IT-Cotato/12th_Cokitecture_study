@@ -33,7 +33,7 @@
 
 ![image.png](images/image.png)
 
-![image.png](images/image 1.png)
+![image.png](images/image1.png)
 
 ### Active-Active 설정을 위한 기술적 과제
 
@@ -123,7 +123,7 @@ Denominator
 
 결론적으로, 큰 단위의 지역별 트래픽 분배는 UltraDNS가 담당하고, 그 안에서 실제 서버로 연결되는 세부적인 트래픽 제어는 Route53이 담당하는 이중 구조를 통해 안정성과 신속성을 모두 확보한 것이다.
 
-![image.png](images/image 2.png)
+![image.png](images/image2.png)
 
 ---
 

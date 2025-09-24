@@ -51,7 +51,7 @@
 
 웹/모바일 트래픽 처리 서버(웹 계층)와 데이터베이스 서버(데이터 계층)를 분리하면 그 각각을 독립적으로 확장해 나갈 수 있게 된다.
 
-![image.png](images/chapter01_image 1.png)
+![image.png](images/chapter01_image1.png)
 
 ## 어떤 데이터베이스를 사용할 것인가?
 
@@ -108,7 +108,7 @@
 
 부하 분산 집합(load balancing set)에 속한 웹 서버들에게 트래픽 부하를 고르게 분산하는 역할을 한다.
 
-![image.png](images/chapter01_image 2.png)
+![image.png](images/chapter01_image2.png)
 
 - 사용자는 로드밸런서의 공개 IP 주소(public IP address)로 접속한다
     - 웹 서버는 클라이언트의 접속을 직접 처리하지 않는다.
@@ -135,7 +135,7 @@
 - 대부분의 애플리케이션은 읽기 연산의 비중이 쓰기 연산보다 훨씬 높다.
     - 통상 부 데이터베이스의 수가 주 데이터베이스의 수보다 많다.
 
-![image.png](images/image 3.png)
+![image.png](images/image3.png)
 
 ## 데이터베이스 다중화 이점
 
@@ -158,7 +158,7 @@
     - 없는 데이터는 복구 스크립트(recovery script)를 돌려서 추가해야 한다.
     - 다중 마스터나 원형 다중화 방식을 도입하면 이런 상황에 대처하는 데 도움이 될 수도 있지만 해당 구성은 훨씬 복잡하다.
 
-![image.png](images/image 4.png)
+![image.png](images/image4.png)
 
 ## 동작 과정
 
@@ -182,7 +182,7 @@
 - 데이터가 잠시 보관되는 곳으로 데이터베이스보다 훨씬 빠르다.
     - 성능 개선, 데이터베이스 부하 줄임, 캐시 계층의 규모를 독립적으로 확장 가능
 
-![image.png](images/image 5.png)
+![image.png](images/image5.png)
 
 1. 만일 데이터가 캐시에 있으면 캐시에서 데이터를 읽음
 2. 데이터가 캐시에 없으면 데이터베이스에서 해당 데이터를 읽어 캐시에 씀
@@ -212,7 +212,7 @@
     - 캐시 서버를 한 대만 두는 경우 해당 서버는 단일 장애 지점(Single Point of Failure, SPOF)이 되어버릴 가능성이 있다.
     - SPOF를 피하려면 여러 지역에 걸쳐 캐시 서버를 분산시켜야 한다.
     
-    ![image.png](images/image 6.png)
+    ![image.png](images/image6.png)
     
 - 캐시 메모리는 얼마나 크게 잡을 것인가?
     - 캐시 메모리가 너무 작으면 데이터가 너무 자주 캐시에서 밀려나버려(eviction) 캐시의 성능이 떨어지게 된다.
@@ -231,9 +231,9 @@
 - 어떤 사용자가 웹사이트를 방문하면, 그 사용자에게 가장 가까운 CDN 서버가 정적 콘텐츠를 전달하게 된다.
     - 사용자가 CDN 서버로부터 멀면 멀수록 웹사이트는 천천히 로드될 것이다.
 
-![image.png](images/image 7.png)
+![image.png](images/image7.png)
 
-![image.png](images/image 8.png)
+![image.png](images/image8.png)
 
 ## CDN 동작과정
 
@@ -260,7 +260,7 @@
         - 콘텐츠의 새로운 버전을 지정하기 위해서는 URL 마지막에 버전 번호를 인자로 주면 된다.
         - image.png?v=2
 
-![image.png](images/image 9.png)
+![image.png](images/image9.png)
 
 - 정적 콘텐츠(JS, CSS, 이미지 등)는 더 이상 웹 서버를 통해 서비스하지 않으며, CDN을 통해 제공하여 더 나은 성능을 보장한다.
 - 캐시가 데이터베이스 부하를 줄여준다.
@@ -275,7 +275,7 @@
 
 - 상태 정보를 보관하는 서버는 클라이언트 정보, 즉 상태를 유지하여 요청들 사이에 공유되도록 한다.
 
-![image.png](images/image 10.png)
+![image.png](images/image10.png)
 
 - 그림과 같이 같은 클라이언트로부터의 요청은 항상 같은 서버로 전송되어야 한다.
 - 대부분의 로드밸런서가 이를 지원하기 위해 고정 세션(sticky session)이라는 기능을 제공하고 있는데, 이는 로드밸런서에 부담을 준다.
@@ -284,14 +284,14 @@
 
 ## 무상태 아키텍처
 
-![image.png](images/image 11.png)
+![image.png](images/image11.png)
 
 - 사용자로부터의 HTTP 요청은 어떤 웹 서버로도 전달될 수 있다.
 - 웹 서버는 상태 정보가 필요한 경우 공유 저장소로부터 데이터를 가져온다.
 - 따라서 상태 정보는 웹 서버로부터 물리적으로 분리되어 있다.
 - 이런 구조는 단순하고, 안정적이며, 규모 확장이 쉽다.
 
-![image.png](images/image 12.png)
+![image.png](images/image12.png)
 
 - 세션 데이터를 웹 계층에서 분리하고 지속성 데이터 보관소에 저장하도록 만들었다.
 - 이 공유 저장소는 관계형 데이터베이스일 수도 있고, Memcached/Redis 같은 캐시 시스템일 수도 있으며, NoSQL일 수도 있다.
@@ -303,7 +303,7 @@
 - 장애가 없는 상황에서 사용자는 가장 가까운 데이터 센터로 안내되는데, 통상 이 절차를 지리적 라우팅(geoDNS-routing)이라고 부른다.
 - 지리적 라우팅에서의 geoDNS는 사용자의 위치에 따라 도메인 이름을 어떤 IP 주소로 변환할지 결정할 수 있도록 해 주는 DNS 서비스다.
 
-![image.png](images/image 13.png)
+![image.png](images/image13.png)
 
 - 이들 데이터 센터 중 하나에 심각한 장애가 발생하면 모든 트래픽은 장애가 없는 데이터 센터로 전송된다.
 
@@ -341,7 +341,7 @@
         - 큐의 크기가 커지면 더 많은 작업 프로세스를 추가해야 처리 시간을 줄일 수 있다.
         - 큐가 거의 항상 비어 있는 상태라면, 작업 프로세스의 수는 줄일 수 있을 것이다.
 
-![image.png](images/image 14.png)
+![image.png](images/image14.png)
 
 # 로그, 메트릭 그리고 자동화
 
@@ -361,7 +361,7 @@
 1. 메시지 큐는 각 컴포넌트가 보다 느슨히 결합 될 수 있도록 하고, 결함에 대한 내성을 높인다.
 2. 로그, 모니터링, 메트릭, 자동화 등을 지원하기 위한 장치를 추가하였다.
 
-![image.png](images/image 15.png)
+![image.png](images/image15.png)
 
 # 데이터베이스의 규모 확장
 
@@ -383,7 +383,7 @@
 - 데이터베이스의 수평적 확장은 샤딩(sharding)이라고도 부른다.
 - 더 많은 서버를 추가함으로써 성능을 향상시킬 수 있도록 한다.
 
-![image.png](images/image 16.png)
+![image.png](images/image16.png)
 
 ## 샤딩
 
@@ -393,9 +393,9 @@
     - user_id % 4를 해시함수로 사용하여 데이터가 보관되는 샤드를 정한다.
     - 결과가 0이면 0번 샤드에, 1이면 1번 샤드에 보관하는 방식이다.
 
-![image.png](images/image 17.png)
+![image.png](images/image17.png)
 
-![image.png](images/image 18.png)
+![image.png](images/image18.png)
 
 ### 샤딩 전략을 구현할 때 고려해야 할 가장 중요한 것: 샤딩 키(sharding key)
 
@@ -419,4 +419,4 @@
     - 하나의 데이터베이스를 여러 샤드 서버로 쪼개고 나면, 여러 샤드에 걸친 데이터를 조인하기가 힘들어진다.
     - 해결 방법: 데이터베이스를 비정규화하여 하나의 테이블에서 질의가 수행될 수 있도록 하는 것이다.
 
-![image.png](images/image 19.png)
+![image.png](images/image19.png)
