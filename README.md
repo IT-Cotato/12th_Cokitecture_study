@@ -7,9 +7,9 @@
 설계 과정에서 발생하는 다양한 이슈를 분석하고, 실제 기업 사례와 비교·토론함으로써 단순한 개념 학습을 넘어 실무적인 시스템 설계 역량을 쌓는 것을 목표로 합니다.
 ## Members
 ---
-|                           <a href="https://github.com/gimin0226"><img src="https://github.com/gimin0226.png" width=120/></a>                           |                          <a href="https://github.com/marshmallowing"><img src="https://github.com/marshmallowing.png" width=120/></a>                           |                       <a href="https://github.com/chwwwon"><img src="https://github.com/chwwwon.png" width=120 /></a>                         |
+|                           <a href="https://github.com/Gimini-3"><img src="https://github.com/Gimini-3.png" width=120/></a>                           |                          <a href="https://github.com/marshmallowing"><img src="https://github.com/marshmallowing.png" width=120/></a>                           |                       <a href="https://github.com/chwwwon"><img src="https://github.com/chwwwon.png" width=120 /></a>                         |
 |:-------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
-|                                     <a href="https://github.com/gimin0226">김기민</a>                                     |                                 <a href="https://github.com/marshmallowing">정유진</a>                                  |                                  <a href="https://github.com/chwwwon">최형원</a>                                  |                
+|                                     <a href="https://github.com/Gimini-3">김기민</a>                                     |                                 <a href="https://github.com/marshmallowing">정유진</a>                                  |                                  <a href="https://github.com/chwwwon">최형원</a>                                  |                
 ## 목표
 1. **대규모 트래픽을 처리하는 시스템 설계 원리**를 체계적으로 이해하게 됩니다.
 2. **클라우드, 데이터베이스, 캐시, 메시지 큐** 등 주요 아키텍처 요소를 실무 관점에서 설명할 수 있게 됩니다.
