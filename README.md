@@ -40,6 +40,30 @@
 - 각 파트 끝에 있는 참고문헌을 2개씩 공부하고 정리하여 발표한다.
 - 파트의 주제와 연관된 기술 블로그를 찾아 발표한다. (선택)
 
+
+<img width="1080" height="1080" alt="4" src="https://github.com/user-attachments/assets/7b99ef0f-49e6-4f53-8b20-fb3b3dc9532b" />
+
+<img width="1080" height="1080" alt="5" src="https://github.com/user-attachments/assets/7f31c4d1-ca7f-4480-a0f5-10a2c455c25b" />
+
+<img width="1080" height="1080" alt="6" src="https://github.com/user-attachments/assets/6e048232-0bc1-40bd-8d86-a669aae6bfd6" />
+
+<img width="1080" height="1080" alt="7" src="https://github.com/user-attachments/assets/3e2dd4b2-ed6f-476c-a4d2-a8a8b0d6855e" />
+
+<img width="1080" height="1080" alt="8" src="https://github.com/user-attachments/assets/21d72f79-2882-4bde-a058-1c0c185b6e8d" />
+
+<img width="1080" height="1080" alt="9" src="https://github.com/user-attachments/assets/0ea6380a-187d-4b25-8ba1-9e598aedcd96" />
+
+<img width="1080" height="1080" alt="10" src="https://github.com/user-attachments/assets/9618e67e-7afb-4731-b4ce-b2fa8f63a27a" />
+
+<img width="1080" height="1080" alt="11" src="https://github.com/user-attachments/assets/3484c439-6dd6-47d8-9538-d647b2a5b916" />
+
+<img width="1080" height="1080" alt="12" src="https://github.com/user-attachments/assets/49ff58bd-d0c1-4163-8fa5-359fa1184462" />
+
+<img width="1080" height="1080" alt="13" src="https://github.com/user-attachments/assets/d8d0515f-1ec1-436e-98b3-81fca2159eab" />
+
+<img width="1080" height="1080" alt="14" src="https://github.com/user-attachments/assets/e0dfbda6-81d2-4128-8558-20e31f8bb7d1" />
+
+
 ## Directory Structure
 ---
 ```
